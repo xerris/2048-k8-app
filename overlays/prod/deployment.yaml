@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: "service-2048"
+spec:
+  replicas:  4
