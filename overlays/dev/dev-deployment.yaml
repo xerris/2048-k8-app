@@ -12,8 +12,10 @@ spec:
     metadata:
       labels:
         app: "2048-app"
-    containers:
-      - name: "2048-app"
+        env: "dev"
+    spec:
+      containers:
+        - name: "2048-app"
   strategy:
     rollingUpdate:
       maxSurge: 1
