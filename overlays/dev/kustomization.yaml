@@ -6,5 +6,3 @@ bases:
 
 patchesStrategicMerge:
 - dev-deployment.yaml
-- dev-namespace.yaml
-- dev-service.yaml

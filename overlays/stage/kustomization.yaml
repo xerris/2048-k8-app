@@ -6,5 +6,3 @@ bases:
 
 patchesStrategicMerge:
 - stage-deployment.yaml
-- stage-namespace.yaml
-- stage-service.yaml

@@ -2,5 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: "service-2048"
+  name: "2048-deployment"
 spec:
   replicas:  4
+  selector:
+    matchLabels:
+      app: "2048-app"
+  template:
+    metadata:
+      labels:
+        app: "2048-app"
+    containers:
+      - name: "2048-app"
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
