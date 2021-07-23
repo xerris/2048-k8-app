@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ambassador-operator-crds.yaml
 - ambassador-operator.yaml
-#- amb-install.yaml
+- amb-install.yaml
 - ambassador.yaml
 - 2048-deployment.yaml
 - 2048-namespace.yaml
