@@ -17,13 +17,13 @@ spec:
   selector:
     service: ambassador
 
----
-apiVersion: getambassador.io/v2
-kind: Module
-metadata:
-  name: ambassador
-  namespace: ambassador
-spec:
-  config:
-    use_proxy_proto: false
+#---
+#apiVersion: getambassador.io/v2
+#kind: Module
+#metadata:
+#  name: ambassador
+#  namespace: ambassador
+#spec:
+#  config:
+#    use_proxy_proto: false
 
