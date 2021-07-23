@@ -13,7 +13,6 @@ spec:
     app: "2048-app"
 
 ---
-
 apiVersion: getambassador.io/v2
 kind:  Mapping
 metadata:
