@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "2048-deployment"
-  namespace: "service-2048"
+  namespace: service-2048
 spec:
   selector:
     matchLabels:
