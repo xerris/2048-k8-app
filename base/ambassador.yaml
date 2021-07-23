@@ -6,6 +6,7 @@ metadata:
   annotations:
     environment: dev
     service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
+    service.beta.kubernetes.io/aws-load-balancer-type: "alb"
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"
     service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "stack=dev,purpose=ingress,service-name=dev-elb"
 
