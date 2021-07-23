@@ -12,13 +12,13 @@ spec:
   selector:
     app: "2048-app"
 
-#---
-#
-#apiVersion: getambassador.io/v2
-#kind:  Mapping
-#metadata:
-#  name: service-2048
-#  namespace: service-2048
-#spec:
-#  prefix: /
-#  service: service-2048:8585
+---
+
+apiVersion: getambassador.io/v2
+kind:  Mapping
+metadata:
+  name: service-2048
+  namespace: service-2048
+spec:
+  prefix: /
+  service: service-2048:8585
