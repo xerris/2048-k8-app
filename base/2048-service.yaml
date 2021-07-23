@@ -14,7 +14,7 @@ spec:
 
 ---
 apiVersion: getambassador.io/v2
-kind: Mapping
+kind:  Mapping
 metadata:
   name: service-2048
   namespace: service-2048
