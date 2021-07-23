@@ -25,5 +25,5 @@ metadata:
   namespace: ambassador
 spec:
   config:
-    use_proxy_proto: false
+    use_proxy_proto: true
 
