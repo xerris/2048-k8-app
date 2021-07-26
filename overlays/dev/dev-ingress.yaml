@@ -1,0 +1,6 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ambassador-ingress
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "stack=dev,purpose=ingress,service-name=dev-elb"
