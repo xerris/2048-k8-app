@@ -24,11 +24,28 @@ spec:
 
 ---
 apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: ambassador
+spec:
+  hostname: "*"
+  selector:
+    matchLabels:
+      hostname: wildcard
+  acmeProvider:
+    authority: none
+  requestPolicy:
+    insecure:
+      action: Redirect
+
+---
+apiVersion: getambassador.io/v2
 kind: Module
 metadata:
   name: ambassador
   namespace: ambassador
 spec:
   config:
-    use_proxy_proto: true
+    xff_num_trusted_hops: 1
+    use_remote_address: false
 
