@@ -16,9 +16,9 @@ spec:
   - name: http
     port: 80
     targetPort: 8080
-  #- name: https
-  #  port: 443
-  #  targetPort: 8443
+  - name: https
+    port: 443
+    targetPort: 8443
   selector:
     service: ambassador
 
@@ -36,7 +36,7 @@ spec:
     authority: none
   requestPolicy:
     insecure:
-      action: Redirect
+      action: Route
 
 ---
 apiVersion: getambassador.io/v2
