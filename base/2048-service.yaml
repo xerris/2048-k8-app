@@ -19,7 +19,7 @@ metadata:
   name: service-2048
   namespace: service-2048
 spec:
-  prefix: /
+  prefix: /game/
   service: service-2048:8080
   timeout_ms: 4000
   idle_timeout_ms: 500000
