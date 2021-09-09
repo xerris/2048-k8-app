@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "2048-deployment"
+  name: 2048-deployment
   namespace: service-2048
 spec:
   selector:
@@ -16,6 +16,6 @@ spec:
       containers:
       - image: alexwhen/docker-2048
         imagePullPolicy: Always
-        name: "2048-app"
+        name: 2048-app
         ports:
         - containerPort: 80

@@ -10,7 +10,7 @@ spec:
       protocol: TCP
   type: NodePort
   selector:
-    app: "2048-app"
+    app: 2048-app
 
 ---
 apiVersion: getambassador.io/v2
