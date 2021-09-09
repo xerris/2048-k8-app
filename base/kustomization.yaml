@@ -4,5 +4,6 @@ resources:
 - 2048-deployment.yaml
 - 2048-namespace.yaml
 - 2048-service.yaml
+- 2048-hpa.yaml
 
 
