@@ -12,15 +12,15 @@ spec:
   selector:
     app: 2048-app
 
----
-apiVersion: getambassador.io/v2
-kind:  Mapping
-metadata:
-  name: service-2048
-  namespace: service-2048
-spec:
-  prefix: /game
-  service: service-2048:8080
-  timeout_ms: 4000
-  idle_timeout_ms: 500000
-  connect_timeout_ms: 2000
+#---
+#apiVersion: getambassador.io/v2
+#kind:  Mapping
+#metadata:
+#  name: service-2048
+#  namespace: service-2048
+#spec:
+#  prefix: /game
+#  service: service-2048:8080
+#  timeout_ms: 4000
+#  idle_timeout_ms: 500000
+#  connect_timeout_ms: 2000
