@@ -17,12 +17,12 @@ spec:
       containers:
         - name: 2048-app
           resources:
-          limits:
-            cpu: 250m
-            memory: 256Mi
-          requests:
-            cpu: 50m
-            memory: 128Mi
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
   strategy:
     rollingUpdate:
       maxSurge: 1
