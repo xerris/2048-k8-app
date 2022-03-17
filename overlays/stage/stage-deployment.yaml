@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: "service-2048"
   name: "2048-deployment"
 spec:
   replicas:  3
