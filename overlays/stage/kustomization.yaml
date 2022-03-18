@@ -4,6 +4,6 @@ namespace: service-2048-stage
 bases:
 - ../../base
 resources:
-  - 2048-namespace.yam
+  - 2048-namespace.yaml
 patchesStrategicMerge:
 - stage-deployment.yaml
