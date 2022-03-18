@@ -36,6 +36,11 @@ metadata:
 spec:
   ports:
     - port: 8081
+      targetPort: 80
+      protocol: TCP
+  type: NodePort
+  selector:
+    app: 2048-app
 
 ---
 apiVersion: getambassador.io/v2
@@ -45,3 +50,6 @@ metadata:
 spec:
   prefix: /game
   service: service-2048:8081
+  timeout_ms: 4000
+  idle_timeout_ms: 500000
+  connect_timeout_ms: 2000
