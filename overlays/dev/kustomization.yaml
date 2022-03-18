@@ -5,6 +5,5 @@ bases:
 - ../../base
 resources:
   - 2048-namespace.yaml
-  - dev-ingress.yaml
 patchesStrategicMerge:
 - dev-deployment.yaml
