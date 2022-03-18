@@ -3,4 +3,5 @@ kind: Ingress
 metadata:
   name: ambassador-ingress
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "stack=dev,purpose=ingress,service-name=dev-elb"
+    kubernetes.io/ingress.class: ambassador
+    #service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "stack=dev,purpose=ingress,service-name=dev-elb"
